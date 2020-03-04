@@ -30,7 +30,7 @@ public class HashTable {
         else {
             HashEntry temp = entries[hash];
             if (temp.key.equals(key)) {
-                entries[hash] = hashEntry;
+                entries[hash].value = hashEntry.value;
                 return;
             }
 
